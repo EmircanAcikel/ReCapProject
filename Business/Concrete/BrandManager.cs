@@ -22,13 +22,13 @@ namespace Business.Concrete
         {
             if (brand.BrandName.Length==2)
             {
-                return new ErrorResult(Messages.BrandNameInvailed);
+                return new ErrorResult(Messages.NameInvailed);
 
             }
 
             _brandDal.Add(brand);
 
-            return new SuccessResult(Messages.BrandAdded);
+            return new SuccessResult(Messages.Added);
         }
 
         public IDataResult<List<Brand>> GetAll()
@@ -38,7 +38,7 @@ namespace Business.Concrete
                 return new ErrorDataResult<List<Brand>>(Messages.MaintenanceTime);
 
             }
-            return new SuccessDataResult<List<Brand>>(_brandDal.GetAll(), Messages.BrandListed);
+            return new SuccessDataResult<List<Brand>>(_brandDal.GetAll(), Messages.Listed);
         }
 
         public IDataResult<Brand> GetById(int brandId)

@@ -6,11 +6,11 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    public interface IColorService
+    public interface IUserService
     {
-        IDataResult<List<Color>> GetAll();
-        IDataResult<List<Color>> GetById(int colorId);
-        IResult Add(Color color);
+        IDataResult<List<User>> GetAll();
+        IDataResult<List<User>> GetAllByUserId(int id);
+        IResult Add(User user);
 
     }
 }
