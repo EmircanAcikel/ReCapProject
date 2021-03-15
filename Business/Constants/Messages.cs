@@ -10,6 +10,7 @@ namespace Business.Constants
         public static string NameInvailed = "İsim geçersiz";
         public static string MaintenanceTime = "Sistem bakımda.";
         public static string Listed = "Listelendi.";
+        public static string CarImageLimitExceeded = "Limite ulaştın.";
 
     }
 }
